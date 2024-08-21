@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Day</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header section start -->
+     <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="bars">≡</label>
+
+        <a href="#" class="logo">Happy<span>Birthday.</span></a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="./page/courses.html">Poem</a>
+        </nav>
+        
+        <div class="icons">
+            <a href="./page/login.html" class="icon-3"><img src="img/user-2.png" onmouseover="this.src='img/user-1.png'" onmouseout="this.src='img/user-2.png'" alt=""></a>
+            <div id="username-display" class="username-display">
+                <span id="user"></span>
+            </div>
+        </div>
+
+     </header>
+    <!-- header section end -->
+
+    <!-- Home section start -->
+     <section class="home" id="home">
+
+        <div class="content">
+            <h3>Happy Birthday</h3>
+            <span>On your special day</span>
+            <p>I wish you all the happiness and love that your heart can hold. Thank you for being you, and for filling my life with endless joy. Here’s to another year of love and laughter!</p>
+            <a href="#about" class="btn">Show More love</a>
+        </div>
+
+     </section>
+    <!-- Home section end -->
+
+    <!-- About section start -->
+     <section class="about" id="about">
+        <h1 class="heading"> For <span> You </span></h1>
+        <div class="row">
+
+            <div class="video-container">
+                <video src="./img/about-video.mp4" loop autoplay muted></video>
+                <h3>Best Person Ever</h3>
+            </div>
+
+            <div class="content">
+                <h3>To My Girlfriend</h3>
+                <p>Happy Birthday to the one who makes my world brighter with every smile and fills my heart with boundless love. On this special day, I want you to know just how much you mean to me. Your kindness, strength, and beautiful spirit are just a few of the countless reasons I fall deeper in love with you every day. You are my partner, my confidant, and my greatest blessing, and I’m endlessly grateful to have you by my side through every moment of life.</p>
+                <p>As you celebrate another year of your amazing life, I hope you are surrounded by all the love and joy you bring to those around you. May this year bring you closer to your dreams and fill your days with happiness, laughter, and unforgettable moments. I’m so lucky to share this journey with you, and I can’t wait to create even more memories together. Happy Birthday, my love—here’s to many more beautiful years to come.</p>
+            </div>
+
+        </div>
+     </section>
+    <!-- About section end -->
+
+    
+<!-- Product section start -->
+<section class="product" id="Product">
+
+    <h1 class="heading">Best <span>Moment</span></h1>
+    <div class="box-container"> 
+
+        <div class="box">
+            <div class="image">
+                <img src="../img/momen-1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../img/moment-2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../img/momen-3.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../img/momen-4.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../img/momen-5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../img/momen-6.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../img/momen-7.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../img/momen-8.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="../img/momen-9.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- Product section end -->
+
+
+<!-- Rahasia section start -->
+<section class="rahasia" id="rahasia">
+    <div class="content">
+        <h3>Pesan Rahasia</h3>
+        <p>Ini pesan rahasia yang aku gak berani buat ungkapin,intinya aku bersyukur banget bisa dapet perempuan cantik kaya mita, aku gak pernah nyangka orang kaya aku bakal ada yang nerima.</p>
+        <p>Dan hal yang paling pengen aku sampaiin adalah aku gak tau sehebat apa atau sekaya apa aku nanti tapi aku akan berusaha keras agar suatu saat nanti kita bisa terikat janji abadi</p>
+    </div>
+</section>
+<!-- Rahasia section end -->
+
+
+    <!-- Footer section start -->
+    <section class="footer" id="footer">
+
+        <div class="credit"> Created by <span> Muhammad Hanif Ibrahim </span> | on August 2024 </div>
+
+    </section>
+    <!-- Footer section end -->
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
+    <script>
+        // Ambil username dari localStorage
+        var username = localStorage.getItem("username");
+        
+        // Tampilkan username di halaman
+        if (username) {
+            document.getElementById("user").textContent = username;
+        } else {
+            // Jika username tidak ada, kembali ke halaman login
+            window.location.href = "../login.html";
+        }
+    </script>
+</body>
+</html>
